@@ -5,7 +5,6 @@ import re
 from datetime import datetime
 from src import constants
 from src.course import Course
-from src.graph import Graph
 from src.projection import Projection
 from src.constants import QUARTERS
 from src.tools import is_current_quarter
@@ -29,8 +28,7 @@ class Veracross:
             self.projections = []
         self.nti_assignments = self.get_nti_assignments()
         self.gpa, self.gpa_errors = self.calculate_gpa()
-        self.graph = Graph(self.active_courses, min(datetime.now(), QUARTERS[quarter-1][2]))
-
+        
     def get_grading_period(self):
         grading_period = self.quarter
         if self.quarter > 2:
