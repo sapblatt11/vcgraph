@@ -15,7 +15,7 @@ Enter your working directory and clone veraAPI
 ```
 $ cd your/Directory/Here
 $ pip install django requests-futures bs4
-$ git clone 
+$ git clone https://github.com/sapblatt11/veraAPI.git
 ```
 And Finish.
  
